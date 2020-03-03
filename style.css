@@ -170,3 +170,16 @@ ul {
       text-align: center;
       font-family: "Montserrat Alternates";
       margin-bottom: 30px; }
+
+#section_devis {
+  min-height: 100vh;
+  padding-top: 30px; }
+  #section_devis .container_devis {
+    max-width: 960px;
+    margin: auto; }
+    #section_devis .container_devis h3 {
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Montserrat Alternates";
+      margin-bottom: 30px; }

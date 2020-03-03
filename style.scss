@@ -225,3 +225,23 @@ ul {
     }
   }
 }
+
+#section_devis {
+  min-height: 100vh;
+  padding-top: 30px;
+  .container_devis {
+    max-width: 960px;
+    margin: auto;
+    h3 {
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $font_titre;
+      margin-bottom: 30px;
+    }
+
+    .contenu_devis {
+
+    }
+  }
+}
