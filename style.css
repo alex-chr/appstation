@@ -157,3 +157,16 @@ ul {
         color: #000;
         margin-bottom: 18px;
         line-height: 1.5; }
+
+#section_agence {
+  min-height: 100vh;
+  padding-top: 30px; }
+  #section_agence .container_agence {
+    max-width: 960px;
+    margin: auto; }
+    #section_agence .container_agence .contenu_agence h3 {
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Montserrat Alternates";
+      margin-bottom: 30px; }
