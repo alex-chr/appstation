@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>App Station || L'agence de développement Mobile</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="slick/slick.css">
@@ -13,11 +14,11 @@
     <div class="container_navbar">
       <div class="contenu_navbar">
         <ul>
-          <li><a href="#">logo</a></li>
-          <li><a href="#">expertises</a></li>
-          <li><a href="#">réalisations</a></li>
-          <li><a href="#">agence</a></li>
-          <li><a href="#">devis</a></li>
+          <li><img src="images/logo_appstation.png"></li>
+          <li><a href="#section_expert">expertises</a></li>
+          <li><a href="#section_realisation">réalisations</a></li>
+          <li><a href="#section_agence">agence</a></li>
+          <li><a href="#section_devis">devis</a></li>
         </ul>
       </div>
     </div>
@@ -70,9 +71,9 @@
             </span>
           </div>
           <div class="list_slick">
-            <img src="images/logo_gamedate.png" alt="">
-            <span>Dev mobile
-              <p>GameDate - Jeu de rencontre</p>
+            <img src="images/logo_antn.png" alt="">
+            <span>Dev web
+              <p>Antn - Agence de com</p>
             </span>
           </div>
           <div class="list_slick">
@@ -88,15 +89,15 @@
             </span>
           </div>
           <div class="list_slick">
-            <img src="images/logo_gamedate.png" alt="">
+            <img src="images/logo_raid.png" alt="">
             <span>Dev mobile
-              <p>GameDate - Jeu de rencontre</p>
+              <p>Raid Shadow Legend - Sponso</p>
             </span>
           </div>
           <div class="list_slick">
-            <img src="images/logo_gamedate.png" alt="">
+            <img src="images/logo_pole.png" alt="">
             <span>Dev mobile
-              <p>GameDate - Jeu de rencontre</p>
+              <p>Pole Emploi - Chômage</p>
             </span>
           </div>
         </div>
@@ -108,6 +109,24 @@
    <div class="container_agence">
      <div class="contenu_agence">
        <h3>notre agence</h3>
+       <div class="contenu_image">
+        <div>
+          <img src="images/charo.jpg" alt="">
+          <strong>Alexandre</strong>
+          <p>Développeur</p>
+          <img src="images/mehdi.jpg" alt="">
+          <strong>Mehdi</strong>
+          <p>UX/UI Designer</p>
+        </div>
+        <div>
+          <img src="images/momo.jpg" alt="">
+          <strong>Momo</strong>
+          <p>Développeur</p>
+          <img src="images/ymad.png" alt="">
+          <strong>Ymad</strong>
+          <p>Chef</p>
+        </div>
+       </div>
      </div>
    </div>
  </section>
@@ -116,23 +135,30 @@
    <div class="container_devis">
      <h3>demander un devis</h3>
      <div class="contenu_devis">
-
+      <div class="text_form">
+        <p>Laissez-nous vos coordonnées et l'on vous recontactera le plus tôt possible.</p>
+        <strong>56 Rue Vincent Scotto, 83000 Toulon</strong>
+        <span>hello@appstation.com</span>
+        <span>+33 6 06 06 06 07</span>
+      </div>
+      <form action="mail.php" method="post" onsubmit="return verifForm()">
+        <input name="nom" type="text" placeholder="Nom">
+        <input name="mail" type="text" placeholder="Email">
+        <input name="sujet" type="text" placeholder="Sujet">
+        <input name="tel" type="text" placeholder="Téléphone">
+        <textarea name="msg" id="" cols="30" rows="6" placeholder="Décrivez-nous votre projet et comment pourrions nous vous aider"></textarea>
+        <button type="submit">envoyer</button>
+      </form>
      </div>
    </div>
  </section>
 
+ <footer id="footer">
+  Copyright APPSTATION© 2020
+ </footer>
+
  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script type="text/javascript" src="slick/slick.min.js"></script>
- <script type="text/javascript">
-   $(document).ready(function(){
-      $('.slider_slick').slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 5,
-        slidesToScroll: 3
-      });
-    });
- </script>
+ <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
